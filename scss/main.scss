@@ -17,6 +17,7 @@
 
 img {max-width: $w12; height:auto; vertical-align: middle;}
 
+
 /* MOBILE PHONE COLUMN GRID */
 
 [class*="col-"] {width:$w12;}
@@ -197,9 +198,9 @@ padding-bottom: 4rem;
   text-decoration: none;
   color: white;
   padding: 0.1em;
+  transition: .25s ease-in-out;
   &:hover{
   transform: scale(1.2); 
-  transition: .25s ease-in-out;
   color: #E48E98;
 }
 }
@@ -768,9 +769,9 @@ input[type="checkbox"]:checked ~ .responsive-nav .nav-item{
 .img-clicked {
   position: absolute;
   padding: 2rem;
-  left: 30%;
-  width: 40%;
-  height: 30%;
+  /*left: 30%;*/
+  width: 90%;
+  height: 46%;
   opacity: 0.9;
   border-radius: 10px;
   -webkit-animation: aboutborderboxin 1s ease-in-out;

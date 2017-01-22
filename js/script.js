@@ -126,10 +126,10 @@ function render(text, name, img){
   var textForBtn = document.createTextNode('Stäng');
   var btn = document.createElement('span');
   btn.appendChild(textForBtn);
-  var image = document.createElement('img');
+  /*var image = document.createElement('img');
   image.style.width = '25%';
   image.src = img;
-  aboutPersonBox.appendChild(image);
+  aboutPersonBox.appendChild(image);*/
 
   if (name === 'matte') {
     aboutPersonBox.className = "img-clicked overlay-matte";
