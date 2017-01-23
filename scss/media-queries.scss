@@ -31,8 +31,7 @@
 
 @media only screen and (min-width:$tablet) {
   .img-clicked {
-    width: 32%;
-    height: 50%;
+    height: 20%;
 
   }
   .wrapper-center {
@@ -107,6 +106,7 @@
 }
   .textbox{text-align: left;}
   .pt-35-tablet {padding-top: 3.5rem;}
+  .mobile {display: none;}
 
 }
 
@@ -124,8 +124,7 @@ h6{font-size: 1.4em;}
 
 @media only screen and (min-width: $desktop) {
   .img-clicked {
-    width: 26%;
-    height: 45%;
+    height: 40%;
 
   }
   .row {padding-top: 2rem; padding-bottom: 0;}
