@@ -2,7 +2,7 @@
 window.onscroll = function() {
     scrollEffects();
 };
-  
+
 const desktop = window.matchMedia("(min-width: 1024px)");
 const mobile = window.matchMedia("(max-width: 600px)");
 
@@ -34,7 +34,7 @@ function scrollEffects() {
       }
         if (scrollBarPosition > 700) {
               navLinks[5].style.color = 'rgb(223, 72, 89)';
-              desktopNav.style.backgroundColor = "black";
+              desktopNav.style.backgroundColor = "rgba(0,0,0,0.9)";
               desktopNav.style.padding = "5px";
               logo.style.padding = "0px";
               logo.style.width = "90%";
@@ -106,7 +106,7 @@ if (!desktop.matches && !mobile.matches) {
 //ABOUT US CLICKER
 var matte = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
 var andreas = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
-var nico = 'Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.';
+var nico = '';
 
 if(desktop.matches){
   var circle = document.getElementsByClassName('circle-img');
