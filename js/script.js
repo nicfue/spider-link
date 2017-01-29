@@ -18,7 +18,7 @@ function scrollEffects() {
     if (tablet.matches){
         if (scrollBarPosition > 3100){
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'circle-img mb-10 slideUp';
             }
         }
     }
@@ -26,7 +26,7 @@ function scrollEffects() {
     if (mobile.matches){
         if (scrollBarPosition > 2840){
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'circle-img mb-10 slideUp';
             }
         }
     }
@@ -86,7 +86,7 @@ function scrollEffects() {
   }
         if (scrollBarPosition > 3370) {
             for (let y = 0; y < aboutUsBox.length; y++) {
-                aboutUsBox[y].className += ' slideUp';
+                aboutUsBox[y].className = 'circle-img mb-10 slideUp';
             }
             navLinks[7].style.color = 'rgb(223, 72, 89)';
             for (let i = 4; i < navLinks.length; i++) {
@@ -172,12 +172,11 @@ function render(aboutPersonBox, name) {
 }
 
 function closeAboutPersonBox(aboutPersonBox, name) {
-    console.log(this.parentElement);
     this.parentElement.className -= ` img-clicked overlay-${name}`;
     this.parentElement.style = 'display:none;';
     const circle = document.getElementsByClassName('circle-img');
     for (let i = 0; i < circle.length; i++){
-        circle[i].className = 'circle-img mb-10';
+        circle[i].className = 'circle-img mb-10 slideUp';
     }
 }
 
